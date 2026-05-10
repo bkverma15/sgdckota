@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Ganesh Dry Cleaners | Luxury Fabric Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a2a44; /* Deep Luxury Blue */
+            --accent: #c5a059;  /* Elegant Gold */
+            --text: #333;
+            --light: #f9f9f9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--text); line-height: 1.6; }
+
+        header {
+            background: #fff;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.9rem; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 42, 68, 0.7), rgba(26, 42, 68, 0.7)), 
+                        url('https://images.unsplash.com/photo-1545173168-9f1947eebd01?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 30px; }
+        .cta-btn { 
+            background: var(--accent); 
+            color: #fff; 
+            padding: 15px 40px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .cta-btn:hover { background: #b08d48; }
+
+        /* Services Section */
+        .services { padding: 80px 5%; text-align: center; background: var(--light); }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 50px; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .service-card { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-10px); }
+        .service-card h3 { color: var(--primary); margin-bottom: 15px; }
+
+        /* Reviews Section */
+        .reviews { padding: 80px 5%; background: #fff; }
+        .review-container { display: flex; overflow-x: auto; gap: 20px; padding: 20px 0; }
+        .review-card { 
+            min-width: 300px; 
+            background: var(--light); 
+            padding: 30px; 
+            border-radius: 10px; 
+            border-left: 5px solid var(--accent);
+        }
+        .stars { color: var(--accent); margin-bottom: 10px; }
+
+        /* Contact Section */
+        footer { background: var(--primary); color: #fff; padding: 60px 5%; text-align: center; }
+        .footer-content { max-width: 800px; margin: 0 auto; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SHREE GANESH</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Book a Pickup</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bespoke Fabric Care</h1>
+        <p>Premium dry cleaning and eco-friendly garment care for your most cherished wardrobe pieces.</p>
+        <a href="#contact" class="cta-btn">Schedule a Pickup</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Our Premium Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Eco-Dry Cleaning</h3>
+                <p>Gentle hydrocarbon cleaning that preserves fabric fibers and color vibrancy.</p>
+            </div>
+            <div class="service-card">
+                <h3>Couture Care</h3>
+                <p>Specialized handling for bridal wear, heavy embroidery, and designer labels.</p>
+            </div>
+            <div class="service-card">
+                <h3>Leather & Suede</h3>
+                <p>Expert cleaning and restoration for luxury handbags, jackets, and footwear.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2 class="section-title" style="text-align: center;">What Our Clients Say</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The best dry cleaning service for my designer suits. They returned my clothes looking brand new!"</p>
+                <br><strong>- Rajesh K.</strong>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Incredible attention to detail with my wedding lehenga. Highly recommend their premium service."</p>
+                <br><strong>- Priya M.</strong>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Fast, professional, and the eco-friendly aspect is a huge plus. My go-to for daily laundry."</p>
+                <br><strong>- Amit S.</strong>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2 class="section-title" style="color: #fff;">Experience Perfection</h2>
+            <p>Visit us at Shree Ganesh Dry Cleaners or call us for a home pickup.</p>
+            <p style="margin-top: 20px; color: var(--accent); font-weight: 600;">Phone: +91 [Your Number Here]</p>
+            <p>Location: [Your Shop Address Here]</p>
+        </div>
+    </footer>
+
+</body>
+</html>
